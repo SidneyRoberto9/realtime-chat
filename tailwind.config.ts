@@ -10,6 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         discord: '#5B6DAE',
+        'dark-blue': {
+          primary: '#141721',
+          second: '#2B2E37',
+        },
       },
       backgroundImage: {
         primary:
@@ -17,6 +21,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 };
 export default config;

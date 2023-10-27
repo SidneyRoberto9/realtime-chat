@@ -1,6 +1,5 @@
 'use client';
-
-import { BsGithub, BsDiscord } from 'react-icons/Bs';
+import { BsGithub, BsDiscord } from 'react-icons/bs';
 import { signIn } from 'next-auth/react';
 
 interface LoginProps {
@@ -13,7 +12,7 @@ export function Login({ type }: LoginProps) {
       <button
         type="button"
         onClick={() => signIn('github')}
-        className="w-full h-14 font-light text-white bg-slate-900 border-none outline-none rounded-lg cursor-pointer transition-all duration-300 hover: brightness-150 flex items-center justify-center gap-2 text-lg">
+        className="w-full h-14 text-white bg-slate-900 border-none outline-none rounded-lg cursor-pointer transition-all duration-300 hover: brightness-150 flex items-center justify-center gap-2 text-lg border shadow-md">
         <span className="font-light">GitHub</span>
         <BsGithub />
       </button>
@@ -23,7 +22,7 @@ export function Login({ type }: LoginProps) {
       <button
         type="button"
         onClick={() => signIn('discord')}
-        className="w-full h-14 font-light text-white bg-discord border-none outline-none rounded-lg cursor-pointer transition-all duration-300 hover: brightness-150 flex items-center justify-center gap-2 text-lg">
+        className="w-full h-14  text-white bg-discord border-none outline-none rounded-lg cursor-pointer transition-all duration-300 hover: brightness-150 flex items-center justify-center gap-2 text-lg border shadow-md">
         <span className="font-light">Google</span>
         <BsDiscord />
       </button>

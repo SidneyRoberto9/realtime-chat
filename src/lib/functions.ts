@@ -7,6 +7,7 @@ export async function getMessages() {
       id: true,
       User: {
         select: {
+          email: true,
           name: true,
           image: true,
         },
